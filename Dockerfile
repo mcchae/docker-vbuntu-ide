@@ -12,7 +12,7 @@ RUN apt-get update \
 # pycharm
 ################################################################################
 WORKDIR /usr/local
-ENV PYCHARM_VER pycharm-professional-2017.3.3
+ENV PYCHARM_VER pycharm-professional-2019.1.2
 RUN curl -SL https://download.jetbrains.com/python/$PYCHARM_VER.tar.gz | \
 		tar -xz -f - \
 	&& PYCHARM_DIR=$(find /usr/local -type d -name "pycharm*" -maxdepth 1) \
